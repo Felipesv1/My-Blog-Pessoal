@@ -11,7 +11,6 @@ import Educacao from '../pages/Onu-Mare/pagesOnu/Educacao/index'
 
 export default function Rotas(){
 
-
     return(
         <Router>
             <Routes>

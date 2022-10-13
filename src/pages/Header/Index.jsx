@@ -8,12 +8,10 @@ import Modal from 'react-modal'
 
 export default function Header(){
 
-
      const [status,setStatus] = useState(false)
      function handleModal(){
         setStatus(!status)
       }
-      
 
 const Menu = () => {
     return(
@@ -33,7 +31,6 @@ const Menu = () => {
                     <S.ListModal><Link to="/Portfolio">Portfólio</Link></S.ListModal>
                     <S.ListModal><Link to="/Onu-Mare">Onu-Maré</Link></S.ListModal>
                 </S.UlModal>
-
         </Modal>
     )
 }

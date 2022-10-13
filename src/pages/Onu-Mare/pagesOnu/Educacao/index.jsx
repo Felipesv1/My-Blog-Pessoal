@@ -4,7 +4,6 @@ import Header from '../../../Header/Index'
 import Educacao from '../../img/educacao.png'
 
 
-
 export default function Erradicacao(){
     return(
         <S.Main>

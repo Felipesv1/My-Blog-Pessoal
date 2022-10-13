@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Main = styled.section`
-
 width:100%;
 height:100%;
 background-color:#ffffff;
@@ -55,7 +54,6 @@ font-size:1.2rem;
 text-align:center;
 }
 `
-
 export const BoxList = styled.ul`
 width:100%;
 height:500px;
@@ -64,13 +62,10 @@ flex-direction: column;
 justify-content:space-evenly;
 align-items:center;
 padding:10px;
-
 li{
     font-family: 'Poppins', sans-serif;
 font-weight:400;
 font-size:1.2rem;
-
-
 }
 @media screen and (min-width: 360px) and (max-width:800px){
     height:600px;

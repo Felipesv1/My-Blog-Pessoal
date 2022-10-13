@@ -10,7 +10,6 @@ import {Link} from 'react-router-dom'
 
 export default function Onu(){
 
-
     return(
         <S.Container>
          <Header/>
@@ -27,7 +26,6 @@ export default function Onu(){
         <img src={Pobreza} alt='imagem sobre erradicação da pobreza'/>
             </S.CardOne>
         </Link>
-         
         </Cards>
         <Cards>
         <Link to='/Nao-Violencia'>

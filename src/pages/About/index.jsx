@@ -7,7 +7,6 @@ import MaoTwo from './img/dedoprabaixo.png'
 
 export default function About(){
 
-
     return(
         <S.Container>
          <Header/>

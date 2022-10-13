@@ -11,8 +11,7 @@ import iconReact from './img/IconReact.png'
 import * as S from './Style'
 
 export default function Home(){
-
-
+    
     return(
         <S.Container>
             <Header/>

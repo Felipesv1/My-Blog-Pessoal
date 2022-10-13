@@ -3,41 +3,31 @@ import styled,{keyframes} from "styled-components";
 const typingOne = keyframes`
 from{
   width:0;
-
 }
 to{
     width:60%;
 }
-
 `
 const typingTwo = keyframes`
 from{
   width:0;
-
 }
 to{
     width:85%;
 }
-
 `
 const ImgAnimation = keyframes`
 from{
   width:0;
-
 }
 to{
     width:400px;
 }
-
 `
-
-
 export  const Container = styled.section`
 width: 100%;
 height:550px;
 `
-
-
 export  const BoxOne = styled.section`
 background-color: #292d25;
 width: 100%;
@@ -46,10 +36,8 @@ display:flex;
 flex-direction:row;
 justify-content:space-evenly;
 align-items:center;
-
 @media  (max-width:1138px){
 flex-direction:column;
-
 h1{
   font-size:1rem;
   white-space: wrap;}
@@ -69,7 +57,6 @@ animation:${ImgAnimation} 2s  normal ;
   animation:none ;
 }
 `
-
 export const BoxTitles = styled.section`
 width:50%;
 display: flex;
@@ -79,7 +66,6 @@ flex-direction: column;
 text-align:center;
 `
 export const Title = styled.h1`
-
 font-family: 'Poppins', sans-serif;
 font-weight:300;
 font-size:3rem;
@@ -92,7 +78,6 @@ color:white;
 @media screen and (min-width:360px) and (max-width:800px){
  animation:none;
  border-right:none;
-
 }
 `
 export const TitleTwo = styled.h1`
@@ -118,12 +103,9 @@ font-family: 'Poppins', sans-serif;
 font-weight:400;
 text-align:center;
 font-size:2rem;
-
 }
 `
 export const BoxInfos = styled.section`
-
-
 width:100%;
 height:100%;
 display:flex;
@@ -131,10 +113,8 @@ align-items: center;
 justify-content: space-evenly;
 @media screen and (min-width:360px) and (max-width:780px){
 flex-direction:column;
- 
 }
 `
-
 export const BoxIconsOne = styled.div`
 width:50%;
 height:100%;
@@ -151,7 +131,6 @@ margin:5px;
 h2{
   color:white;
 }
-
 `
 export const ImgIconOne = styled.img`
 width:100px;
@@ -164,7 +143,6 @@ transition:.5s all ;
 @media screen and (min-width:360px) and (max-width:780px){
 width:70px;
 height:70px;
- 
 }
 &:hover{
 
@@ -193,7 +171,6 @@ margin:5px;
 h2{
   color:white;
 }
-
 `
 export const ImgIconTwo = styled.img`
 width:100px;

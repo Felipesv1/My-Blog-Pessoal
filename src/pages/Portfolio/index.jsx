@@ -8,9 +8,7 @@ import Portflow from './img/PortflowImg.png'
 import HarryPage from './img/HarryPage.png'
 import Dogs from './img/Dogs.png'
 
-
 export default function Portfolio(){
-
 
     return(
         <S.Container>

@@ -1,9 +1,7 @@
 import React from 'react'
 import * as S from './Style' 
 import Header from '../../../Header/Index'
-
 import Pobreza from '../../img/pobreza.png'
-
 
 
 export default function Erradicacao(){
