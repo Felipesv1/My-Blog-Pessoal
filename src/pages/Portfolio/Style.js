@@ -11,9 +11,6 @@ display:flex;
 align-items:center;
 padding:10px;
 background:#292d25;
-@media screen and (min-width:360px) and (max-width:800px){
-flex-direction:column;
-}
 `
 export const Projects = styled.div`
 background-image:linear-gradient(to top, #200820,  #292d25);
