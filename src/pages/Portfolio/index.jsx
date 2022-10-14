@@ -25,7 +25,7 @@ export default function Portfolio(){
             <a href="https://recipes-page.netlify.app/" target="_blank" rel="noopener noreferrer"> <img src={Recipes} alt='Imagem recipes' /></a>
             <a href="https://felipesv1.github.io/Lipeflix/" target="_blank" rel="noopener noreferrer"><img src={Lipeflix} alt='Imagem Lipeflix' /></a>
             <a href="https://felipesv1.github.io/Portflow-Desafio-final/" target="_blank" rel="noopener noreferrer"> <img src={Portflow} alt='Imagem Portflow' /></a>
-            <a href="https://felipesv1.github.io/Portflow-Desafio-final/" target="_blank" rel="noopener noreferrer"> <img src={HarryPage} alt='Imagem recipes' /></a>
+            <a href="https://hogwartspage.netlify.app/" target="_blank" rel="noopener noreferrer"> <img src={HarryPage} alt='Imagem recipes' /></a>
             <a href="https://czjgph.csb.app/dogpage" target="_blank" rel="noopener noreferrer"> <img src={Dogs} alt='Imagem recipes' /></a>
         </Carousel>
         </S.Projects>
