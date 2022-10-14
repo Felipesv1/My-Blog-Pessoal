@@ -12,9 +12,6 @@ display:flex;
 justify-content:space-evenly;
 flex-wrap: wrap;
 background-color:#ffffff;
-img{
-    width:20%;
-}
 `
 export const CardFor = styled.div`
 width:100%;
@@ -26,6 +23,14 @@ justify-content:space-evenly;
 align-items:center;
 @media screen and (min-width: 360px) and (max-width:800px){
     flex-direction: column-reverse;
+}
+`
+
+export const ImgX = styled.img`
+display:none;
+width:50px;
+@media screen and (min-width: 360px) and (max-width:800px){
+    display:flex;
 }
 `
 export const BoxTitlep = styled.section`
@@ -53,6 +58,9 @@ font-weight:400;
 font-size:1.2rem;
 text-align:center;
 }
+`
+export const ImgEduca = styled.img`
+width:20%;
 `
 export const BoxList = styled.ul`
 width:100%;
