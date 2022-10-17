@@ -29,13 +29,14 @@ width: 100%;
 height:550px;
 `
 export  const BoxOne = styled.section`
-background-color: #292d25;
+background-color:${props => props.theme.BoxOne};
 width: 100%;
 height:500px;
 display:flex;
 flex-direction:row;
 justify-content:space-evenly;
 align-items:center;
+border:4px solid #876307;
 @media  (max-width:1138px){
 flex-direction:column;
 h1{
@@ -67,6 +68,7 @@ text-align:center;
 `
 export const Title = styled.h1`
 font-family: 'Poppins', sans-serif;
+color:${props => props.theme.fontColor};
 font-weight:300;
 font-size:3rem;
 border-right:2px solid #ffffeb;
@@ -74,7 +76,7 @@ margin-bottom:15px;
 animation:${typingOne} 2s 1s steps(40) normal both;
 white-space: nowrap;
 overflow:hidden;
-color:white;
+margin:0;
 @media screen and (min-width:360px) and (max-width:800px){
  animation:none;
  border-right:none;
@@ -82,6 +84,7 @@ color:white;
 `
 export const TitleTwo = styled.h1`
 width: 100%;
+color:${props => props.theme.fontColor};
 font-family: 'Poppins', sans-serif;
 font-weight:300;
 font-size:3rem;
@@ -89,7 +92,7 @@ border-right:2px solid #ffffeb;
 animation:${typingTwo} 2s 3s steps(40) normal both;
 white-space: nowrap;
 overflow:hidden;
-color:white;
+margin:0;
 @media screen and (min-width:360px) and (max-width:800px){
  animation:none;
  border-right:none;
@@ -100,6 +103,7 @@ width:100%;
 
 h2{
 font-family: 'Poppins', sans-serif;
+color:${props => props.theme.fontColor};
 font-weight:400;
 text-align:center;
 font-size:2rem;
@@ -122,14 +126,14 @@ display: flex;
 justify-content:space-evenly;
 align-items:center;
 flex-direction:column;
-transition:.5s all ;
-background-color: #292d25;
-margin:5px;
+border:4px solid #876307;
+background-color:${props => props.theme.BoxIconsOne};
 @media screen and (min-width:360px) and (max-width:800px){
   width:100%;
 }
 h2{
-  color:white;
+  color:${props => props.theme.fontColor};
+  margin:0;
 }
 `
 export const ImgIconOne = styled.img`
@@ -159,17 +163,19 @@ align-items:center;
 export const BoxIconsTwo = styled.div`
 width:50%;
 height:100%;
-background-color: #200820;
 display: flex;
 justify-content:space-evenly;
 align-items:center;
 flex-direction:column;
-margin:5px;
+border:4px solid #876307;
+background-color:${props => props.theme.BoxIconsTwo};
+
 @media screen and (min-width:360px) and (max-width:800px){
   width:100%;
 }
 h2{
-  color:white;
+  color:${props => props.theme.fontColor};
+  margin:0;
 }
 `
 export const ImgIconTwo = styled.img`

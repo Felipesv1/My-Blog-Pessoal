@@ -4,11 +4,25 @@ import styled from "styled-components";
 export const Container = styled.section`
 width:100%;
 height:100%;
+
+`
+export const BoxOnu = styled.section`
+width:100%;
+height:800px;
+display:flex;
+flex-direction: column;
+background-color:${props => props.theme.Containers};
+border:4px solid #876307;
+
+@media screen and (min-width: 360px) and (max-width:800px){
+    margin-top:50px;
+    height:100%;
+}
 `
 export const BoxTitlep = styled.section`
 width:100%;
 height:500px;
-border-bottom:1px solid ;
+border-bottom:4px solid #876307;
 padding:15px;
 display:flex;
 flex-direction: column;
@@ -18,23 +32,16 @@ h1{
 font-weight:600;
 font-size:2rem;
 text-align:center;
+color:${props => props.theme.fontColor};
+
 }
 p{
 font-family: 'Poppins', sans-serif;
 font-weight:400;
 font-size:1.2rem;
 text-align:center;
-}
-`
-export const BoxOnu = styled.section`
-width:100%;
-height:800px;
-display:flex;
-flex-direction: column;
-background:#ffffff;
-@media screen and (min-width: 360px) and (max-width:800px){
-    margin-top:50px;
-    height:100%;
+color:${props => props.theme.fontColor};
+
 }
 `
 export const BoxCard = styled.section`
@@ -45,11 +52,12 @@ justify-content:space-evenly;
 align-items: center;
 flex-wrap: wrap;
 h3{
-    color:white;
+
     font-family: 'Poppins', sans-serif;
     font-weight:300;
     text-align:center;
     font-size:1.2rem;
+    color:${props => props.theme.fontColor};
 }
 img{
     width:100px;

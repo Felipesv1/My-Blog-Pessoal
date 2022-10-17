@@ -15,6 +15,8 @@ export default function Portfolio(){
         <Header/>
         <S.BoxOne>
         <S.Projects>
+          <h1>Bem vindo ao meu Portfólio !!</h1>
+          <p>clique na imagem e veja o Projeto</p>
         <Carousel defaultControlsConfig={{
     nextButtonText: '>',
     prevButtonText: '<',

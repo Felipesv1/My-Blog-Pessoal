@@ -5,7 +5,7 @@ import Educacao from '../../img/educacao.png'
 import X from './img/x.png'
 import {Link} from 'react-router-dom'
 
-export default function Erradicacao(){
+export default function Educa(){
     return(
         <S.Main>
             <Header/>

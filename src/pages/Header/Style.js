@@ -17,6 +17,7 @@ justify-content:space-between;
 align-items:center;
 padding:30px;
 
+
 `
 export const ImgBtn = styled.img`
 width:50px;

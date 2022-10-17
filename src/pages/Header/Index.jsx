@@ -3,14 +3,17 @@ import {Link} from 'react-router-dom';
 import * as S from './Style.js'
 import Codigo from './img/Codigo.png'
 import ImgMenu from './img/menu.png'
+import ImgMenutwo from './img/menuTwo.png'
 import X from './img/x.png'
 import Modal from 'react-modal'
 
 export default function Header(){
 
      const [status,setStatus] = useState(false)
+     const [theme,setTheme] = useState("light")
      function handleModal(){
-        setStatus(!status)
+         theme === "light" ? setTheme('dark') :setTheme('light') 
+         setStatus(!status)
       }
 
 const Menu = () => {
@@ -44,9 +47,9 @@ const Menu = () => {
                     <S.List><Link to="/Portfolio">Portfólio</Link></S.List>
                     <S.List><Link to="/Onu-Mare">Onu-Maré</Link></S.List>
                 </S.Ul>
-                { status&& <Menu/>}
+                { status && <Menu/>}
             </S.Nav>
-                <S.BtnOpen onClick={()=>{handleModal()}}><S.ImgBtn src={ImgMenu} alt='menu'/></S.BtnOpen>
+                <S.BtnOpen onClick={()=>{handleModal()}}>{theme === ""? <S.ImgBtn src={ImgMenu} alt='menu'/> : <S.ImgBtn src={ImgMenutwo} alt='menu'/> }</S.BtnOpen>
         </S.Header>
     )
 }

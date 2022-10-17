@@ -19,16 +19,18 @@ height:100%;
 display:flex;
 align-items:center;
 padding:10px;
-background: #200820;
+background-color:${props => props.theme.Containers};
+border:4px solid #876307;
+
 @media screen and (min-width:360px) and (max-width:800px){
 flex-direction:column;
 }
 `
 export const BoxImg = styled.div`
-background-image:linear-gradient(to right, #200820,  #876307);
+background-image:${props => props.theme.BoxAbout};
+border:4px solid #876307;
 width:50%;
 height:85%;
-border: 1px solid #200820;
 border-radius:15px;
 text-align:center;
 margin:30px;
@@ -40,7 +42,8 @@ h3{
 font-family: 'Poppins', sans-serif;
 font-weight:200;
 font-size:2rem;
-color:white;
+color:${props => props.theme.fontColor};
+
 }
 `
 export const Img = styled.img`
@@ -67,10 +70,10 @@ flex-direction:column;
 }
 `
 export const BoxPs = styled.div`
-background:#292d25;
+background-color:${props => props.theme.BoxPs};
 width:100%;
 height:50%;
-border: 1px solid #200820;
+border:4px solid #876307;
 margin:30px;
 text-align:center;
 border-radius:15px;
@@ -79,10 +82,11 @@ justify-content: center;
 align-items:center;
 flex-direction:column;
 p{
-    font-family: 'Poppins', sans-serif;
-font-weight:200;
-font-size:100%;
-color:white;
-margin-top:10px;
+  color:${props => props.theme.fontColor};
+  font-family: 'Poppins', sans-serif;
+  font-weight:200;
+  font-size:1.5rem;
+  margin-top:10px;
+
 }
 `
