@@ -85,7 +85,7 @@ p{
   color:${props => props.theme.fontColor};
   font-family: 'Poppins', sans-serif;
   font-weight:200;
-  font-size:1.5rem;
+  font-size:1.2rem;
   margin-top:10px;
 
 }
