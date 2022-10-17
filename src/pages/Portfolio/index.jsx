@@ -23,7 +23,7 @@ export default function Portfolio(){
       pagingDotsStyle: {
     fill: 'none'
   }
-}} enableKeyboardControls={true} wrapAround={true} autoplay={true} slidesToShow={2.1}>
+}} enableKeyboardControls={true} wrapAround={true}  slidesToShow={2.1}>
             <a href="https://recipes-page.netlify.app/" target="_blank" rel="noopener noreferrer"> <img src={Recipes} alt='Imagem recipes' /></a>
             <a href="https://felipesv1.github.io/Lipeflix/" target="_blank" rel="noopener noreferrer"><img src={Lipeflix} alt='Imagem Lipeflix' /></a>
             <a href="https://felipesv1.github.io/Portflow-Desafio-final/" target="_blank" rel="noopener noreferrer"> <img src={Portflow} alt='Imagem Portflow' /></a>
