@@ -42,10 +42,10 @@ export default function Home(){
                 <h2>Languages</h2>
                 </S.BoxTitleTwo>
                 <S.BoxLinks>
-               <S.ImgIconTwo src={iconHtml5} alt="iconHtml5"/>
-               <S.ImgIconTwo src={iconCss} alt="iconCss"/>
-               <S.ImgIconTwo src={iconJs} alt="iconJs"/>
-               <S.ImgIconTwo src={iconReact} alt="iconReact"/>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_black"><S.ImgIconTwo src={iconHtml5} alt="iconHtml5"/></a>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/css" target="_black"><S.ImgIconTwo src={iconCss} alt="iconCss"/></a>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_black"><S.ImgIconTwo src={iconJs} alt="iconJs"/></a>
+                <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_black"> <S.ImgIconTwo src={iconReact} alt="iconReact"/></a>
                 </S.BoxLinks>
                 </S.BoxIconsTwo>
             </S.BoxInfos>

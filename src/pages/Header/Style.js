@@ -16,11 +16,12 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:30px;
-
-
 `
 export const ImgBtn = styled.img`
 width:50px;
+@media screen and (min-width:977px) and (max-width:1294px){
+display:none;
+}
 `
 export const BtnOpen = styled.button`
 

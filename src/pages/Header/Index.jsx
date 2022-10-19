@@ -2,8 +2,7 @@ import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
 import * as S from './Style.js'
 import Codigo from './img/Codigo.png'
-import ImgMenu from './img/menu.png'
-import ImgMenutwo from './img/menuTwo.png'
+import ImgMenu from './img/menu.svg'
 import X from './img/x.png'
 import Modal from 'react-modal'
 
@@ -52,7 +51,7 @@ const Menu = () => {
                 </S.Ul>
                 { status && <Menu/>}
             </S.Nav>
-                <S.BtnOpen onClick={()=>{handleModal()}}>{theme === ""? <S.ImgBtn src={ImgMenu} alt='menu'/> : <S.ImgBtn src={ImgMenutwo} alt='menu'/> }</S.BtnOpen>
+                <S.BtnOpen onClick={()=>{handleModal()}}><S.ImgBtn src={ImgMenu} alt='menu'/></S.BtnOpen>
         </S.Header>
     )
 }

@@ -54,7 +54,7 @@ flex-wrap: wrap;
 h3{
 
     font-family: 'Poppins', sans-serif;
-    font-weight:300;
+    font-weight:600;
     text-align:center;
     font-size:1.2rem;
     color:${props => props.theme.fontColor};
