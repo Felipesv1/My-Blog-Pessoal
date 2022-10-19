@@ -20,7 +20,7 @@ export default function About(){
          <S.BoxPs>
             <p>My name is Felipe Pereira. </p>
             <p>i live in complexo da maré , Bonsucesso , RJ. </p>
-            <p>I discovered this programming area at the beginning of March 2022, and every day I am learning to love it. It's an area that doesn't just have to do with code, but also teaches you how to deal with many issues in life.</p>
+            <p>I discovered this programming area at the beginning of March 2022, and every day I am learning to love it.</p>
          </S.BoxPs>
          </S.BoxAbout>
         </S.Container>
