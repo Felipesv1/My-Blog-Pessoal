@@ -14,4 +14,5 @@ export const darkTheme = {
     BoxIconsOne:"#292d25",
     BoxIconsTwo:"#200820",
     BoxPs:"#292d25"
+
 }

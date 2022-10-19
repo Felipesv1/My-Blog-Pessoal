@@ -21,7 +21,7 @@ border:4px solid #876307;
 `
 export const BoxTitlep = styled.section`
 width:100%;
-height:500px;
+height:600px;
 border-bottom:4px solid #876307;
 padding:15px;
 display:flex;

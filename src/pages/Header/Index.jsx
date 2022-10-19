@@ -11,6 +11,9 @@ export default function Header(){
 
      const [status,setStatus] = useState(false)
      const [theme,setTheme] = useState("light")
+
+    
+
      function handleModal(){
          theme === "light" ? setTheme('dark') :setTheme('light') 
          setStatus(!status)
@@ -22,9 +25,9 @@ const Menu = () => {
         onRequestClose={handleModal}
     isOpen={status}
     style={{overlay: {
-      backgroundColor: ' #292d25'
+      backgroundColor: 'white'
     }, content:{
-        backgroundColor: 'rgb(214, 218, 210)'   
+        backgroundColor: "#292d25"  
     }}}
  >
                 <S.BtnClose onClick={()=>{handleModal()}}><S.ImgBtn src={X} alt='fechar'/></S.BtnClose>

@@ -89,6 +89,7 @@ width:90%;
 margin-left:2px;
 text-align:center;
 transition:1s all;
+background:green;
 &:hover{
     background:green;
 }
