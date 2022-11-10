@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.section`
 width:100%;
-height:800px;
+height:100%;
 `
 export const BoxOne = styled.section`
 width:100%;
 height:100%;
 display:flex;
 align-items:center;
+flex-direction: column;
 background-color:${props => props.theme.Containers};
 
 h1{
@@ -30,17 +31,27 @@ export const Projects = styled.div`
 width:100%;
 height:100%;
 display:flex;
-align-items:center;
-justify-content:space-evenly;
-flex-direction:column;
+justify-content:center;
+align-items: center;
+flex-wrap: wrap;
+flex-direction:row;
 border:4px solid #876307;
 
-img{
-    width:100%;
+a{
+    margin-inline: auto;
+}
+ a img{
+    width:350px;
     padding:10px;
     border-radius:20px;
     object-fit:cover;
+    transition: .5s all;
+&:hover{
+    transform: scale(1.1);
+}    
 }
+
+
 @media screen and (min-width:360px) and (max-width:800px){
 
     img{

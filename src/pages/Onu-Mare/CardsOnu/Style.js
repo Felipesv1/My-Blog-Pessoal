@@ -8,7 +8,7 @@ height:100%;
 `
 export const BoxOnu = styled.section`
 width:100%;
-height:800px;
+height:100%;
 display:flex;
 flex-direction: column;
 background-color:${props => props.theme.Containers};
@@ -21,7 +21,7 @@ border:4px solid #876307;
 `
 export const BoxTitlep = styled.section`
 width:100%;
-height:600px;
+height:100%;
 border-bottom:4px solid #876307;
 padding:15px;
 display:flex;
@@ -46,8 +46,9 @@ color:${props => props.theme.fontColor};
 `
 export const BoxCard = styled.section`
 width:100%;
-height:800px;
+height:100%;
 display:flex;
+padding: 100px;
 justify-content:space-evenly;
 align-items: center;
 flex-wrap: wrap;
@@ -67,8 +68,9 @@ img{
     }
 }
 @media screen and (min-width: 360px) and (max-width:800px){
-    margin-top:50px;
-    height:900px;
+    height:100%;
+    align-items: center;
+
 }
 `
 export const CardOne = styled.div`
@@ -79,6 +81,7 @@ display:flex;
 flex-direction: column;
 justify-content:space-evenly;
 align-items:center;
+margin-bottom: 5px;
 `
 export const CardTwo = styled.div`
 width:200px;
@@ -88,6 +91,8 @@ display:flex;
 flex-direction: column;
 justify-content:space-evenly;
 align-items:center;
+margin-bottom: 5px;
+
 `
 export const CardThree = styled.div`
 width:200px;
@@ -97,6 +102,8 @@ display:flex;
 flex-direction: column;
 justify-content:space-around;
 align-items:center;
+margin-bottom: 5px;
+
 `
 export const CardFor = styled.div`
 width:200px;
@@ -106,4 +113,6 @@ display:flex;
 flex-direction: column;
 justify-content:space-evenly;
 align-items:center;
+margin-bottom: 5px;
+
 `

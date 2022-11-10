@@ -26,7 +26,7 @@ const Menu = () => {
     style={{overlay: {
       backgroundColor: 'white'
     }, content:{
-        backgroundColor: "#292d25"  
+        backgroundColor: "#ebebeb"
     }}}
  >
                 <S.BtnClose onClick={()=>{handleModal()}}><S.ImgBtn src={X} alt='fechar'/></S.BtnClose>

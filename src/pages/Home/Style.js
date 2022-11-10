@@ -77,7 +77,7 @@ animation:${typingOne} 2s 1s steps(40) normal both;
 white-space: nowrap;
 overflow:hidden;
 margin:0;
-@media screen and (min-width:360px) and (max-width:800px){
+@media screen and (min-width:320px) and (max-width:800px){
  animation:none;
  border-right:none;
 }
@@ -93,7 +93,7 @@ animation:${typingTwo} 2s 3s steps(40) normal both;
 white-space: nowrap;
 overflow:hidden;
 margin:0;
-@media screen and (min-width:360px) and (max-width:800px){
+@media screen and (min-width:320px) and (max-width:800px){
  animation:none;
  border-right:none;
 }
@@ -115,7 +115,7 @@ height:100%;
 display:flex;
 align-items: center;
 justify-content: space-evenly;
-@media screen and (min-width:360px) and (max-width:780px){
+@media screen and (min-width:320px) and (max-width:780px){
 flex-direction:column;
 }
 `
@@ -128,7 +128,7 @@ align-items:center;
 flex-direction:column;
 border:4px solid #876307;
 background-color:${props => props.theme.BoxIconsOne};
-@media screen and (min-width:360px) and (max-width:800px){
+@media screen and (min-width:320px) and (max-width:800px){
   width:100%;
 }
 h2{
@@ -144,7 +144,7 @@ border:4px solid #876307;
 padding:10px;
 object-fit:cover;
 transition:.5s all ;
-@media screen and (min-width:360px) and (max-width:780px){
+@media screen and (min-width:320px) and (max-width:780px){
 width:70px;
 height:70px;
 }
@@ -170,7 +170,7 @@ flex-direction:column;
 border:4px solid #876307;
 background-color:${props => props.theme.BoxIconsTwo};
 
-@media screen and (min-width:360px) and (max-width:800px){
+@media screen and (min-width:320px) and (max-width:800px){
   width:100%;
 }
 h2{
@@ -186,7 +186,7 @@ border:4px solid #639027;
 padding:10px;
 object-fit:cover;
 transition:.5s all ;
-@media screen and (min-width:360px) and (max-width:780px){
+@media screen and (min-width:320px) and (max-width:780px){
   width:70px;
 height:70PX;
 }

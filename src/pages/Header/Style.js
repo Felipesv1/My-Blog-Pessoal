@@ -19,7 +19,7 @@ padding:30px;
 `
 export const ImgBtn = styled.img`
 width:50px;
-@media screen and (min-width:977px) and (max-width:1294px){
+@media screen and (min-width:977px) and (max-width:1900px){
 display:none;
 }
 `
@@ -49,7 +49,7 @@ animation-timing-function: linear;
 `
 export  const Nav = styled.nav`
 width:50%;
-@media screen and (min-width:360px) and (max-width:977px){
+@media screen and (min-width:320px) and (max-width:977px){
     display: none;
 }
 `
@@ -60,7 +60,7 @@ display:flex;
 justify-content:space-evenly;
 align-items:center;
 list-style:none;
-@media screen and (min-width:360px) and (max-width:977px){
+@media screen and (min-width:320px) and (max-width:977px){
     display: none;
 }
 `
@@ -80,19 +80,20 @@ justify-content:space-evenly;
 align-items:center;
 flex-direction:column;
 list-style:none;
-@media screen and (min-width:360px) and (max-width:977px){
+@media screen and (min-width:320px) and (max-width:977px){
     display: flex;
 }
 `
 export  const ListModal = styled.li`
-border-bottom:1px solid green;
+border:1px solid #876307;
 width:90%;
 margin-left:2px;
 text-align:center;
-transition:1s all;
-background:green;
+transition:.5s all;
+background-color:${props => props.theme.BoxOne};
+border-radius: 5px;
 &:hover{
-    background:green;
+    background:#876307;
 }
 `
 
