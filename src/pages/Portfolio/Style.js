@@ -42,6 +42,7 @@ a{
 }
  a img{
     width:350px;
+    height: 258px;
     padding:10px;
     border-radius:20px;
     object-fit:cover;

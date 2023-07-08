@@ -36,7 +36,7 @@ display:flex;
 flex-direction:row;
 justify-content:space-evenly;
 align-items:center;
-border:4px solid #876307;
+border:2px solid #876307;
 @media  (max-width:1138px){
 flex-direction:column;
 h1{
@@ -48,7 +48,7 @@ export const Img = styled.img`
 width:400px;
 height:400px;
 border-radius:50%;
-border:4px solid #876307;
+border:2px solid #876307;
 padding:10px;
 object-fit:cover;
 animation:${ImgAnimation} 2s  normal ;
@@ -126,7 +126,7 @@ display: flex;
 justify-content:space-evenly;
 align-items:center;
 flex-direction:column;
-border:4px solid #876307;
+border:2px solid #876307;
 background-color:${props => props.theme.BoxIconsOne};
 @media screen and (min-width:320px) and (max-width:800px){
   width:100%;
@@ -140,7 +140,7 @@ export const ImgIconOne = styled.img`
 width:100px;
 height:100px;
 border-radius:50%;
-border:4px solid #876307;
+border:2px solid #876307;
 padding:10px;
 object-fit:cover;
 transition:.5s all ;
@@ -167,7 +167,7 @@ display: flex;
 justify-content:space-evenly;
 align-items:center;
 flex-direction:column;
-border:4px solid #876307;
+border:2px solid #876307;
 background-color:${props => props.theme.BoxIconsTwo};
 
 @media screen and (min-width:320px) and (max-width:800px){

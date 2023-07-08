@@ -12,7 +12,7 @@ export const darkTheme = {
     BoxAbout:"#292d25",
     BoxOne:"#292d25",
     BoxIconsOne:"#292d25",
-    BoxIconsTwo:"#200820",
+    BoxIconsTwo:"#292d25",
     BoxPs:"#292d25"
 
 }
