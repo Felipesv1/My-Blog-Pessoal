@@ -33,7 +33,6 @@ export const Nav = styled.nav`
   justify-content: space-evenly;
   align-items: center;
   width: 50%;
-  background-color: green;
   #menu {
     width: 100%;
     display: flex;
