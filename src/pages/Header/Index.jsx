@@ -1,37 +1,35 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import * as S from "./Style.js";
-import Codigo from "./img/Codigo.png";
+
 
 export default function Header() {
-  const [status, setStatus] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [status, setStatus] = useState(true);
+  const [theme, setTheme] = useState("dark");
 
   function toggleMenu() {
-    theme === "light" ? setTheme("dark") : setTheme("light");
+    theme === "dark" ? setTheme("light") : setTheme("dark");
     setStatus(!status);
     const menu = document.querySelector("#menu");
     menu.classList.toggle("active");
     const hamburguer = document.querySelector(".hamburguer");
     hamburguer.classList.toggle("active");
   }
-  
-
 
   return (
     <S.Header>
-      <S.Img src={Codigo} alt="tag fechada" />
-      <S.Nav id="nav" >
-      <S.btn_mobile onClick={toggleMenu}
-        id="btn_mobile"
-        aria-expanded="false"
-        aria-label="Abrir menu"
-        aria-controls="menu"
-        aria-haspopup="true"
-      >
-        menu
-        <span className="hamburguer"></span>
-      </S.btn_mobile>
+      <S.Nav id="nav">
+        <S.btn_mobile
+          onClick={toggleMenu}
+          id="btn_mobile"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          aria-controls="menu"
+          aria-haspopup="true"
+        >
+          menu
+          <span className="hamburguer"></span>
+        </S.btn_mobile>
         <ul id="menu" role="menu">
           <S.List>
             <Link to="/">Home</Link>
