@@ -8,10 +8,6 @@ export const Btn = styled.button`
   top: 150px;
   cursor: pointer;
 `;
-export const ImgLamp = styled.img`
-  width: 50px;
-  height: 50px;
-`;
 
 export const Img = styled.img`
   width: 30px;
