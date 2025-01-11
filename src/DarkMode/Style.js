@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const Btn = styled.button`
-  background: transparent;
-  border: 1px;
-  position: fixed;
-  right: 0;
-  top: 150px;
-  cursor: pointer;
-`;
-
 export const Img = styled.img`
   width: 30px;
   &:hover {
@@ -26,7 +17,7 @@ export const section_toggle_mode = styled.section`
   border-radius: 20%;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 230px;
   margin-top: 20px;
   margin-right: 20px;
 `;
