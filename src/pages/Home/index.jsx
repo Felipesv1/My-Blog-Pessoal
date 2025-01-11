@@ -28,7 +28,6 @@ export default function Home() {
       <S.BoxInfos>
         <S.BoxIcons>
           <S.BoxTitleInfos>
-
             <h2>Networks</h2>
           </S.BoxTitleInfos>
           <S.BoxLinks>
