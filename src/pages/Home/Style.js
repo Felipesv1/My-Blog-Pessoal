@@ -100,36 +100,44 @@ export const TitleTwo = styled.h1`
     border-right: none;
   }
 `;
-export const BoxTitleTwo = styled.section`
+export const BoxTitle = styled.div`
   width: 100%;
-
-  h2 {
+  margin-top:80px;  
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  h2{
+    width: 40rem;
+    border-radius:40px;
+    background-color: ${(props) => props.theme.BoxIcons};
     font-family: "Poppins", sans-serif;
     color: ${(props) => props.theme.fontColor};
     font-weight: 400;
     text-align: center;
     font-size: 2rem;
   }
+  
 `;
 export const BoxInfos = styled.section`
   width: 100%;
-  height: 100%;
+  height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   @media screen and (min-width: 320px) and (max-width: 780px) {
     flex-direction: column;
   }
 `;
-export const BoxIconsOne = styled.div`
-  width: 50%;
-  height: 100%;
+// box network --------------------------
+export const BoxIcons = styled.div`
+  width: 40%;
+  height: 50%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-radius:40px;
   flex-direction: column;
-  border: 2px solid #876307;
-  background-color: ${(props) => props.theme.BoxIconsOne};
+  background-color: ${(props) => props.theme.BoxIcons};
   @media screen and (min-width: 320px) and (max-width: 800px) {
     width: 100%;
   }
@@ -138,11 +146,22 @@ export const BoxIconsOne = styled.div`
     margin: 0;
   }
 `;
-export const ImgIconOne = styled.img`
+export const BoxTitleInfos = styled.div`
+
+h2{
+
+  font-family: "Poppins", sans-serif;
+  color: ${(props) => props.theme.fontColor};
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+}
+  
+`;
+export const imgIcons = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid #876307;
   padding: 10px;
   object-fit: cover;
   transition: 0.5s all;
@@ -151,8 +170,7 @@ export const ImgIconOne = styled.img`
     height: 70px;
   }
   &:hover {
-    background-color: #876307;
-    transform: rotate(360deg);
+    background-color: #3ba99c;
   }
 `;
 export const BoxLinks = styled.div`
@@ -161,38 +179,4 @@ export const BoxLinks = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
-export const BoxIconsTwo = styled.div`
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  border: 2px solid #876307;
-  background-color: ${(props) => props.theme.BoxIconsTwo};
 
-  @media screen and (min-width: 320px) and (max-width: 800px) {
-    width: 100%;
-  }
-  h2 {
-    color: ${(props) => props.theme.fontColor};
-    margin: 0;
-  }
-`;
-export const ImgIconTwo = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 4px solid #639027;
-  padding: 10px;
-  object-fit: cover;
-  transition: 0.5s all;
-  @media screen and (min-width: 320px) and (max-width: 780px) {
-    width: 70px;
-    height: 70px;
-  }
-  &:hover {
-    background-color: #639027;
-    transform: rotate(360deg);
-  }
-`;
