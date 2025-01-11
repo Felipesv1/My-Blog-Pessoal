@@ -17,7 +17,7 @@ export const section_toggle_mode = styled.section`
   border-radius: 20%;
   position: absolute;
   top: 0;
-  right: 230px;
+  right: 30px;
   margin-top: 20px;
   margin-right: 20px;
 `;

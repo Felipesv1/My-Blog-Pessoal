@@ -116,6 +116,9 @@ export const BoxTitle = styled.div`
     text-align: center;
     font-size: 2rem;
   }
+  @media screen and (min-width: 320px) and (max-width: 780px) {
+    margin-top:40px;  
+  }
   
 `;
 export const BoxInfos = styled.section`
@@ -130,9 +133,10 @@ export const BoxInfos = styled.section`
 `;
 // box network --------------------------
 export const BoxIcons = styled.div`
-  width: 40%;
+  width: 90%;
   height: 50%;
   display: flex;
+  margin: 15px;
   justify-content: space-evenly;
   align-items: center;
   border-radius:40px;
@@ -140,6 +144,7 @@ export const BoxIcons = styled.div`
   background-color: ${(props) => props.theme.BoxIcons};
   @media screen and (min-width: 320px) and (max-width: 800px) {
     width: 100%;
+    margin-bottom:px;
   }
   h2 {
     color: ${(props) => props.theme.fontColor};
