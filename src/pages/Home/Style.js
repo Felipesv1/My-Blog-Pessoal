@@ -25,13 +25,14 @@ to{
 }
 `;
 export const ContainerHome = styled.section`
-  width: 100%;
+  max-width:1400px;
   height: 550px;
+  margin: 10px auto;
 `;
 export const BoxGreeting = styled.section`
   background-color: ${(props) => props.theme.BoxOne};
-  width: 100%;
   height: 500px;
+  border-radius:40px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
