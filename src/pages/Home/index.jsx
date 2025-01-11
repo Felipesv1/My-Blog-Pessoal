@@ -22,62 +22,63 @@ export default function Home() {
           <S.TitleTwo>Welcome to my blog !!</S.TitleTwo>
         </S.BoxWelcomeTitles>
       </S.BoxGreeting>
-      <S.BoxTitleTwo>
-        <h2>Developer front-end</h2>
-      </S.BoxTitleTwo>
+        <S.BoxTitle>
+        <h2>Developer Full-Stack</h2>
+        </S.BoxTitle>
       <S.BoxInfos>
-        <S.BoxIconsOne>
-          <S.BoxTitleTwo>
+        <S.BoxIcons>
+          <S.BoxTitleInfos>
+
             <h2>Networks</h2>
-          </S.BoxTitleTwo>
+          </S.BoxTitleInfos>
           <S.BoxLinks>
             <a href="https://github.com/Felipesv1" target="_black">
-              <S.ImgIconOne src={iconGithub} alt="iconGithub" />
+              <S.imgIcons src={iconGithub} alt="iconGithub" />
             </a>
             <a href="https://instagram.com/flipebg7" target="_black">
-              <S.ImgIconOne src={iconinstagram} alt="iconinstagram" />
+              <S.imgIcons src={iconinstagram} alt="iconinstagram" />
             </a>
             <a href="https://www.linkedin.com/in/felipereira0/" target="_black">
-              <S.ImgIconOne src={iconlinkedin} alt="iconlinkedin" />
+              <S.imgIcons src={iconlinkedin} alt="iconlinkedin" />
             </a>
           </S.BoxLinks>
-        </S.BoxIconsOne>
-        <S.BoxIconsTwo>
-          <S.BoxTitleTwo>
+        </S.BoxIcons>
+        <S.BoxIcons>
+          <S.BoxTitleInfos>
             <h2>Languages</h2>
-          </S.BoxTitleTwo>
+          </S.BoxTitleInfos>
           <S.BoxLinks>
             <a
               href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
               target="_black"
             >
-              <S.ImgIconTwo src={iconHtml5} alt="iconHtml5" />
+              <S.imgIcons src={iconHtml5} alt="iconHtml5" />
             </a>
             <a
               href="https://developer.mozilla.org/pt-BR/docs/Web/css"
               target="_black"
             >
-              <S.ImgIconTwo src={iconCss} alt="iconCss" />
+              <S.imgIcons src={iconCss} alt="iconCss" />
             </a>
             <a
               href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
               target="_black"
             >
-              <S.ImgIconTwo src={iconJs} alt="iconJs" />
+              <S.imgIcons src={iconJs} alt="iconJs" />
             </a>
             <a href="https://www.typescriptlang.org" target="_black">
               {" "}
-              <S.ImgIconTwo src={iconTypescript} alt="icone do typescript" />
+              <S.imgIcons src={iconTypescript} alt="icone do typescript" />
             </a>
             <a
               href="https://pt-br.reactjs.org/docs/getting-started.html"
               target="_black"
             >
               {" "}
-              <S.ImgIconTwo src={iconReact} alt="iconReact" />
+              <S.imgIcons src={iconReact} alt="iconReact" />
             </a>
           </S.BoxLinks>
-        </S.BoxIconsTwo>
+        </S.BoxIcons>
       </S.BoxInfos>
     </S.ContainerHome>
   );
