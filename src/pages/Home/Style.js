@@ -1,29 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
-const typingOne = keyframes`
-from{
-  width:0;
-}
-to{
-    width:60%;
-}
-`;
-const typingTwo = keyframes`
-from{
-  width:0;
-}
-to{
-    width:85%;
-}
-`;
-const ImgAnimation = keyframes`
-from{
-  width:0;
-}
-to{
-    width:400px;
-}
-`;
+
 export const ContainerHome = styled.section`
   max-width:1400px;
   height: 550px;
@@ -53,11 +30,9 @@ export const ImgProfile = styled.img`
   border: 2px solid #ffffff;
   padding: 10px;
   object-fit: cover;
-  animation: ${ImgAnimation} 2s normal;
   @media screen and (min-width: 300px) and (max-width: 950px) {
     width: 250px;
     height: 250px;
-    animation: none;
   }
 `;
 export const BoxWelcomeTitles = styled.section`
@@ -73,14 +48,11 @@ export const Title = styled.h1`
   color: ${(props) => props.theme.fontColor};
   font-weight: 300;
   font-size: 3rem;
-  border-right: 2px solid #ffffeb;
   margin-bottom: 15px;
-  animation: ${typingOne} 2s 1s steps(40) normal both;
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
   @media screen and (min-width: 320px) and (max-width: 800px) {
-    animation: none;
     border-right: none;
   }
 `;
@@ -90,13 +62,10 @@ export const TitleTwo = styled.h1`
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 3rem;
-  border-right: 2px solid #ffffeb;
-  animation: ${typingTwo} 2s 3s steps(40) normal both;
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
   @media screen and (min-width: 320px) and (max-width: 800px) {
-    animation: none;
     border-right: none;
   }
 `;

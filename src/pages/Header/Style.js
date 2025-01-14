@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  width: 100%;
+  max-width:1400px;
   height: 80px;
+  margin: 10px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 30px;
+  @media screen and (min-width: 300px) and (max-width: 1000px) {
+    justify-content: space-between;
+}
 `;
 export const ImgBtn = styled.img`
   width: 50px;
