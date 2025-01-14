@@ -9,39 +9,64 @@ import iconCss from "./img/iconCss3.png";
 import iconJs from "./img/iconJS.png";
 import iconReact from "./img/IconReact.png";
 import iconTypescript from "./img/icons8-typescript-48.png";
+import { motion } from "motion/react";
 import * as S from "./Style";
 
 export default function Home() {
   return (
     <S.ContainerHome>
       <Header />
-      <S.BoxGreeting>
-        <S.ImgProfile src={Foto} alt="foto" />
-        <S.BoxWelcomeTitles>
-          <S.Title>Hi, Felipe here !!</S.Title>
-          <S.TitleTwo>Welcome to my blog !!</S.TitleTwo>
-        </S.BoxWelcomeTitles>
-      </S.BoxGreeting>
+
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 , delay: 0.2}}
+      >
+        <S.BoxGreeting>
+          <S.ImgProfile src={Foto} alt="foto" />
+          <S.BoxWelcomeTitles>
+            <S.Title>Hi, I am felipe Pereira !!</S.Title>
+            <S.TitleTwo>Welcome to my blog !!</S.TitleTwo>
+          </S.BoxWelcomeTitles>
+        </S.BoxGreeting>
+      </motion.div>
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1, delay:0.8 }}
+        
+      >
         <S.BoxTitle>
-        <h2>Developer Full-Stack</h2>
+          <h2>Developer Full-Stack</h2>
         </S.BoxTitle>
+      </motion.div>
+
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
       <S.BoxInfos>
-        <S.BoxIcons>
-          <S.BoxTitleInfos>
-            <h2>Networks</h2>
-          </S.BoxTitleInfos>
-          <S.BoxLinks>
-            <a href="https://github.com/Felipesv1" target="_black">
-              <S.imgIcons src={iconGithub} alt="iconGithub" />
-            </a>
-            <a href="https://instagram.com/flipebg7" target="_black">
-              <S.imgIcons src={iconinstagram} alt="iconinstagram" />
-            </a>
-            <a href="https://www.linkedin.com/in/felipereira0/" target="_black">
-              <S.imgIcons src={iconlinkedin} alt="iconlinkedin" />
-            </a>
-          </S.BoxLinks>
-        </S.BoxIcons>
+          <S.BoxIcons>
+            <S.BoxTitleInfos>
+              <h2>Networks</h2>
+            </S.BoxTitleInfos>
+            <S.BoxLinks>
+              <a href="https://github.com/Felipesv1" target="_black">
+                <S.imgIcons src={iconGithub} alt="iconGithub" />
+              </a>
+              <a href="https://instagram.com/flipebg7" target="_black">
+                <S.imgIcons src={iconinstagram} alt="iconinstagram" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/felipereira0/"
+                target="_black"
+              >
+                <S.imgIcons src={iconlinkedin} alt="iconlinkedin" />
+              </a>
+            </S.BoxLinks>
+          </S.BoxIcons>
+   
         <S.BoxIcons>
           <S.BoxTitleInfos>
             <h2>Languages</h2>
@@ -79,6 +104,7 @@ export default function Home() {
           </S.BoxLinks>
         </S.BoxIcons>
       </S.BoxInfos>
+        </motion.div>
     </S.ContainerHome>
   );
 }

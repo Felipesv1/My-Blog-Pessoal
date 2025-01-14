@@ -1,9 +1,8 @@
 import React from 'react'
 import Header from '../Header/Index'
 import * as S from './Style'
-import Foto from './img/fotoPerfil.jpeg'
-import MaoOne from './img/mao.png'
-import MaoTwo from './img/dedoprabaixo.png'
+import FotoPerfil from './img/fotoPerfil.png'
+import { motion } from "motion/react";
 
 export default function About(){
 
@@ -11,17 +10,22 @@ export default function About(){
         <S.Container>
          <Header/>
          <S.BoxAbout>
+        <motion.div    animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 1 , delay: 0.2}} >
          <S.BoxImg>
-            <S.Img src={Foto} alt='foto perfil'/>
-            <h3>know a little about me </h3>
-            <S.MaoOne src={MaoOne} alt='foto de uma mão com o dedo apontando para o lado'/>
-            <S.MaoTwo src={MaoTwo} alt='foto de uma mão com o dedo apontando para baixo'/>
+            <S.Img src={FotoPerfil} alt='foto perfil'/>
          </S.BoxImg>
+        </motion.div>
+        <motion.div    animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 1 , delay: 0.8}} >
          <S.BoxPs>
             <p>My name is Felipe Pereira. </p>
             <p>i live in complexo da maré , Bonsucesso , RJ. </p>
             <p>I discovered this programming area at the beginning of March 2022, and every day I am learning to love it.</p>
          </S.BoxPs>
+        </motion.div>
          </S.BoxAbout>
         </S.Container>
     )
