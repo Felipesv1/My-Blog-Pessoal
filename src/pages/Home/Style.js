@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ContainerHome = styled.section`
   max-width:1400px;
   height: 550px;
@@ -44,31 +43,27 @@ export const BoxWelcomeTitles = styled.section`
   text-align: center;
 `;
 export const Title = styled.h1`
+  width: 100%;
   font-family: "Poppins", sans-serif;
   color: ${(props) => props.theme.fontColor};
   font-weight: 300;
   font-size: 3rem;
   margin-bottom: 15px;
-  white-space: nowrap;
-  overflow: hidden;
+  
   margin: 0;
+  span{
+  font-size:4rem;
+    font-weight: 800;
+  }
   @media screen and (min-width: 320px) and (max-width: 800px) {
     border-right: none;
+    span{
+      font-size:2rem;
+        font-weight: 800;
+      }
   }
 `;
-export const TitleTwo = styled.h1`
-  width: 100%;
-  color: ${(props) => props.theme.fontColor};
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0;
-  @media screen and (min-width: 320px) and (max-width: 800px) {
-    border-right: none;
-  }
-`;
+
 export const BoxTitle = styled.div`
   width: 100%;
   margin-top:80px;  
@@ -81,7 +76,7 @@ export const BoxTitle = styled.div`
     background-color: ${(props) => props.theme.BoxIcons};
     font-family: "Poppins", sans-serif;
     color: ${(props) => props.theme.fontColor};
-    font-weight: 400;
+    font-weight: 800;
     text-align: center;
     font-size: 2rem;
   }
