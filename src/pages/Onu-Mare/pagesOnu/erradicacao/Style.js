@@ -19,7 +19,6 @@ display:flex;
 flex-direction: row;
 justify-content:space-evenly;
 align-items:center;
-border:4px solid #876307;
 @media screen and (min-width: 360px) and (max-width:800px){
     flex-direction: column-reverse;
 }
@@ -75,7 +74,6 @@ flex-direction: column;
 justify-content:space-evenly;
 align-items:center;
 padding:10px;
-border:4px solid #876307;
 li{
 font-family: 'Poppins', sans-serif;
 font-weight:400;

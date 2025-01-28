@@ -11,8 +11,6 @@ width:100%;
 height:100%;
 display:flex;
 flex-direction: column;
-background-color:${props => props.theme.Containers};
-border:4px solid #876307;
 
 @media screen and (min-width: 360px) and (max-width:800px){
     margin-top:50px;
@@ -22,7 +20,6 @@ border:4px solid #876307;
 export const BoxTitlep = styled.section`
 width:100%;
 height:100%;
-border-bottom:4px solid #876307;
 padding:15px;
 display:flex;
 flex-direction: column;

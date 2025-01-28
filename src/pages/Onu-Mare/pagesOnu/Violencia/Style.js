@@ -19,7 +19,6 @@ display:flex;
 flex-direction: row;
 justify-content:space-evenly;
 align-items:center;
-border:4px solid #876307;
 @media screen and (min-width: 360px) and (max-width:800px){
     flex-direction: column-reverse;
 }
@@ -64,7 +63,6 @@ export const ImgVio = styled.img`
 width:20%;
 `
 export const BoxList = styled.ul`
-border:4px solid #876307;
 width:100%;
 height:500px;
 display:flex;
