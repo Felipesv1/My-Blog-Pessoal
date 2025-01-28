@@ -10,7 +10,7 @@ export const boxAnimations = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   div {
-    background-color: #2afc98;
+    background-color: ${(props) => props.theme._primary_color};
     border-radius: 10px;
     width: 80px;
     height: 80px;
@@ -37,7 +37,7 @@ export const BoxAbout = styled.section`
   }
 `;
 export const BoxImg = styled.div`
-  background: ${(props) => props.theme.BoxAbout};
+  background: ${(props) => props.theme._primary_color};
   border-radius: 15px;
   text-align: center;
   display: flex;
@@ -58,7 +58,7 @@ export const Img = styled.img`
 `;
 
 export const BoxPs = styled.div`
-  background-color: ${(props) => props.theme.BoxPs};
+  background-color: ${(props) => props.theme._primary_color};
   width: 100%;
   height: 100%;
   text-align: center;

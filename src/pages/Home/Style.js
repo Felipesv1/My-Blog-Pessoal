@@ -6,7 +6,7 @@ export const ContainerHome = styled.section`
   margin: 10px auto;
 `;
 export const BoxGreeting = styled.section`
-  background-color: ${(props) => props.theme.BoxOne};
+  background-color: ${(props) => props.theme._primary_color};
   height: 500px;
   border-radius:40px;
   display: flex;
@@ -66,14 +66,13 @@ export const Title = styled.h1`
 
 export const BoxTitle = styled.div`
   width: 100%;
-  margin-top:80px;  
   display: flex;
   align-items:center;
   justify-content:center;
   h2{
     width: 40rem;
     border-radius:40px;
-    background-color: ${(props) => props.theme.BoxIcons};
+    background-color: ${(props) => props.theme._primary_color};
     font-family: "Poppins", sans-serif;
     color: ${(props) => props.theme.fontColor};
     font-weight: 800;
@@ -87,7 +86,6 @@ export const BoxTitle = styled.div`
 `;
 export const BoxInfos = styled.section`
   width: 100%;
-  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,17 +96,15 @@ export const BoxInfos = styled.section`
 // box network --------------------------
 export const BoxIcons = styled.div`
   width: 90%;
-  height: 50%;
   display: flex;
   margin: 15px;
   justify-content: space-evenly;
   align-items: center;
   border-radius:40px;
   flex-direction: column;
-  background-color: ${(props) => props.theme.BoxIcons};
+  background-color: ${(props) => props.theme._primary_color};
   @media screen and (min-width: 320px) and (max-width: 800px) {
     width: 100%;
-    margin-bottom:px;
   }
   h2 {
     color: ${(props) => props.theme.fontColor};
@@ -139,7 +135,7 @@ export const imgIcons = styled.img`
     height: 70px;
   }
   &:hover {
-    background-color: #3ba99c;
+    background-color: #8d1eae;
   }
 `;
 export const BoxLinks = styled.div`
