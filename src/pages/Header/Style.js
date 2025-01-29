@@ -106,10 +106,10 @@ export const Nav = styled.nav`
       display: block;
       text-decoration: none;
       font-family: "Poppins", sans-serif;
-      color: #876307;
+      color: ${(props) => props.theme.fontcolor};
       padding: 0.5rem;
       transition: 0.5s all;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid ${(props) => props.theme.fontcolor};
     }
   }
 `;
