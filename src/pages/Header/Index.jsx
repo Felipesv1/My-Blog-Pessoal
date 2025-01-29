@@ -40,9 +40,6 @@ export default function Header() {
           <S.List>
             <Link to="/Portfolio">Portfólio</Link>
           </S.List>
-          <S.List>
-            <Link to="/Onu-Mare">Onu-Maré</Link>
-          </S.List>
         </ul>
       </S.Nav>
     </S.Header>
